@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+			.nivel1 .ident {
+				background: #FBB;
+				color: #333;
+			}
+			.nivel2 .ident {
+				background: #CCC;
+				color: #000;				
+			}
+			.nivel3 .ident {
+				background: #000;
+				color: #fff;
+			}
+        .pessoa {
+            background-color: pink;
+            padding: 2px;
+            margin: 2px;
+            width: 100%;
+            border: 4px solid #000;
+					  border-radius: 0.5em;
+        }
+        .ante {
+            background-color: #bbb;
+            min-height: 100px;
+            display:flex;
+        }
+        .ident {
+            background-color: #baf;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="pessoa nivel1">
+        <div class="ante">
+            <!-- Antecessores -->
+            <div class="pessoa nivel2 ">
+                <div class="ante">
+                    <div class="pessoa nivel3">
+                        <div class="ante">
+                            <!-- Antecessores -->
+                        </div>
+                        <div class="ident">
+                            <p>Avô Paterno</p>
+                        </div>
+                    </div>
+                    <div class="pessoa nivel3">
+                        <div class="ante">
+                            <!-- Antecessores -->
+                        </div>
+                        <div class="ident">
+                            <p>Avó Paterna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ident">
+                    <p>Pai</p>
+                </div>
+            </div>
+            <div class="pessoa nivel2">
+                <div class="ante">
+                    <div class="pessoa nivel3">
+                        <div class="ante">
+                            <!-- Antecessores -->
+                        </div>
+                        <div class="ident">
+                            <p>Avô Materna</p>
+                        </div>
+                    </div>
+                    <div class="pessoa nivel3">
+                        <div class="ante">
+                            <!-- Antecessores -->
+                        </div>
+                        <div class="ident">
+                            <p>Avó Materna</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ident">
+                    <p>Mãe</p>
+                </div>
+            </div>
+        </div>
+        <div class="ident">
+            <p>Eu</p>
+        </div>
+    </div>
+
+    <div>
+        <p>Cada "Pessoa" é constituída pelos seus antecessores e pela sua identificação. Assim utilizamos 3 classes: <code>.pessoa</code> <code>.ante</code> e <code>.ident</code>.</p>
+        <p>Colocam-se divs .pessoa dentro das div antecessores de forma recursiva até ter tantos níveis quantos os desejados.</p>
+    </div>
+</body>
+</html>
