@@ -28,7 +28,7 @@
             display:flex;
         }
         .ident {
-            background-color: #baf;
+            background-color: rgb(51, 0, 255);
             height: 50px;
             display: flex;
             justify-content: center;
