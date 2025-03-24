@@ -6,87 +6,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="pessoa nivel1">
-        <div class="ante">
-            <div class="familia">
-                <div class="pessoa nivel2">
-                    <div class="ante">
-                        <div class="pessoa nivel3">
-                            <div class="ante"></div>
-                            <div class="ident">
-                                <p>Celio Guimarães</p>
-                            </div>
-                        </div>
-                        <div class="pessoa nivel3">
-                            <div class="ante"></div>
-                            <div class="ident">
-                                <p>Elizabete Guimarães</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ident">
-                        <p>Marcos Guimarães</p>
-                    </div>
-                </div>
-                <div class="pessoa nivel2">
-                    <div class="ante"></div>
-                    <div class="ident">
-                        <p>Tio Paterno</p>
-                    </div>
-                </div>
-                <div class="pessoa nivel2">
-                    <div class="ante"></div>
-                    <div class="ident">
-                        <p>Tia Paterna</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="familia">
-             
-                <div class="pessoa nivel2">
-                    <div class="ante">
-                        <div class="pessoa nivel3">
-                            <div class="ante"></div>
-                            <div class="ident">
-                                <p>Michel Swire</p>
-                            </div>
-                        </div>
-                        <div class="pessoa nivel3">
-                            <div class="ante"></div>
-                            <div class="ident">
-                                <p>Carmem Swire</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ident">
-                        <p>Raquel Guimarães</p>
-                    </div>
-                </div>
-                <div class="pessoa nivel2">
-                    <div class="ante"></div>
-                    <div class="ident">
-                        <p>Tio Materno</p>
-                    </div>
-                </div>
-                <div class="pessoa nivel2">
-                    <div class="ante"></div>
-                    <div class="ident">
-                        <p>Tia Materna</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-  
-        <div class="ante">
-            <div class="ident">
-                <p>Santiago Guimarães</p>
-            </div>
-            <div class="ident">
-                <p>Irmão</p>
-            </div>
-        </div>
+    <div class="tree">
+        <ul>
+            <li>
+                <div class="ident nivel3">Celio Guimarães</div>
+                <div class="ident nivel3">Elizabete Guimarães</div>
+                <ul>
+                    <li><div class="ident nivel2">Marcos Guimarães</div></li>
+                    <li><div class="ident nivel2">André Guimarães</div></li>
+                </ul>
+            </li>
+            <li>
+                <div class="ident nivel3">Michel Swire</div>
+                <div class="ident nivel3">Carmem Swire</div>
+                <ul>
+                    <li><div class="ident nivel2">Raquel Guimarães</div></li>
+                    <li><div class="ident nivel2">Daniel Swire</div></li>
+                    <li><div class="ident nivel2">Rebeca Swire</div></li>
+                </ul>
+            </li>
+            <li>
+                <div class="ident nivel1">Santiago Guimarães</div>
+                <div class="ident nivel1">Irmão</div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
